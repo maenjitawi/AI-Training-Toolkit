@@ -3,45 +3,511 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Ma'en Jitawi | AI Training</title>
+
+    <title>Dr. Ma'en Jitawi | AI Training & Digital Transformation</title>
+
+    <meta name="description"
+          content="Dr. Ma'en Jitawi - AI Training, Digital Transformation, Project Management and Professional Training.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f5f7fa;
+        }
+
+        /* Navigation */
+
+        nav {
+            background: #111827;
+            padding: 16px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* Hero */
+
+        .hero {
+            background: linear-gradient(135deg, #111827, #1e3a8a);
+            color: white;
+            text-align: center;
+            padding: 110px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            font-weight: normal;
+            margin-bottom: 25px;
+            color: #dbeafe;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 18px;
+            color: #e5e7eb;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 13px 28px;
+            background: white;
+            color: #1e3a8a;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #dbeafe;
+        }
+
+        /* General Sections */
+
+        section {
+            padding: 75px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 45px;
+            color: #111827;
+        }
+
+        /* About */
+
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Services */
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #1e3a8a;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        /* Toolkit */
+
+        .toolkit {
+            background: #eef2ff;
+        }
+
+        .toolkit-list {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .toolkit-list div {
+            background: white;
+            margin-bottom: 15px;
+            padding: 18px 22px;
+            border-radius: 7px;
+        }
+
+        /* Courses */
+
+        .courses {
+            background: white;
+        }
+
+        .course-list {
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 18px;
+        }
+
+        .course {
+            border-left: 5px solid #1e3a8a;
+            background: #f8fafc;
+            padding: 20px;
+        }
+
+        /* Contact */
+
+        .contact {
+            background: #111827;
+            color: white;
+            text-align: center;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact p {
+            margin: 8px 0;
+        }
+
+        .contact a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #030712;
+            color: #aaa;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            section {
+                padding: 55px 5%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Dr. Ma'en Jitawi</h1>
+<!-- Navigation -->
 
-    <h2>AI Training & Digital Transformation</h2>
-
-    <p>
-        Practical AI training, digital transformation,
-        and project management solutions for organizations
-        and professionals.
-    </p>
-
-    <hr>
-
-    <h2>Our Resources</h2>
+<nav>
+    <div class="logo">
+        JITAWI CENTER
+    </div>
 
     <ul>
-        <li>AI Training Courses</li>
-        <li>AI Prompts</li>
-        <li>Digital Transformation</li>
-        <li>AI for Project Management</li>
-        <li>AI for Organizations</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#toolkit">AI Toolkit</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
+</nav>
 
-    <h2>AI Training Toolkit</h2>
+
+<!-- Hero -->
+
+<header class="hero">
+
+    <h1>Dr. Ma'en Jitawi</h1>
+
+    <h2>
+        AI Training & Digital Transformation
+    </h2>
 
     <p>
-        Practical resources designed to help professionals
-        understand and apply Artificial Intelligence in their work.
+        Professional training, Artificial Intelligence,
+        digital transformation and project management solutions
+        for professionals and organizations.
     </p>
 
-    <h2>Contact</h2>
+    <a class="button" href="#services">
+        Explore Services
+    </a>
+
+</header>
+
+
+<!-- About -->
+
+<section id="about" class="about">
+
+    <h2 class="section-title">
+        About
+    </h2>
+
+    <div class="about-content">
+
+        <p>
+            Dr. Ma'en Jitawi is a professional trainer and consultant
+            specializing in Artificial Intelligence, digital transformation,
+            project management and organizational development.
+        </p>
+
+        <br>
+
+        <p>
+            Through Jitawi Center for Consulting & Training,
+            practical training and professional development programs
+            are delivered for individuals, organizations and institutions.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Services -->
+
+<section id="services">
+
+    <h2 class="section-title">
+        Professional Services
+    </h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Artificial Intelligence</h3>
+            <p>
+                Practical AI training, AI tools, workplace AI,
+                executive awareness and AI adoption.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Transformation</h3>
+            <p>
+                Digital transformation awareness, strategy,
+                implementation and organizational enablement.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Project Management</h3>
+            <p>
+                Professional project management training,
+                planning, governance, risk and performance.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Executive Training</h3>
+            <p>
+                Executive programs designed for managers,
+                leaders and decision makers.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Courses -->
+
+<section id="courses" class="courses">
+
+    <h2 class="section-title">
+        Training Programs
+    </h2>
+
+    <div class="course-list">
+
+        <div class="course">
+            <strong>AI Leadership</strong>
+            <p>AI awareness, leadership and organizational transformation.</p>
+        </div>
+
+        <div class="course">
+            <strong>AI Strategy</strong>
+            <p>Developing practical AI strategies for organizations.</p>
+        </div>
+
+        <div class="course">
+            <strong>AI Governance</strong>
+            <p>Responsible AI, governance and organizational policies.</p>
+        </div>
+
+        <div class="course">
+            <strong>AI in the Workplace</strong>
+            <p>Practical AI tools for everyday professional work.</p>
+        </div>
+
+        <div class="course">
+            <strong>AI for Project Management</strong>
+            <p>Using AI to improve project planning and management.</p>
+        </div>
+
+        <div class="course">
+            <strong>Digital Transformation</strong>
+            <p>Digital transformation concepts, strategy and implementation.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AI Toolkit -->
+
+<section id="toolkit" class="toolkit">
+
+    <h2 class="section-title">
+        AI Training Toolkit
+    </h2>
+
+    <div class="toolkit-list">
+
+        <div>
+            <strong>AI Prompts</strong><br>
+            Practical prompts for managers and professionals.
+        </div>
+
+        <div>
+            <strong>AI Productivity</strong><br>
+            Tools and techniques for improving workplace productivity.
+        </div>
+
+        <div>
+            <strong>AI for Management</strong><br>
+            AI applications for planning, reporting and decision support.
+        </div>
+
+        <div>
+            <strong>AI for Training</strong><br>
+            Resources for trainers, educators and learning professionals.
+        </div>
+
+        <div>
+            <strong>AI for Project Management</strong><br>
+            Practical applications of AI across the project lifecycle.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Contact -->
+
+<section id="contact" class="contact">
+
+    <h2 class="section-title">
+        Contact
+    </h2>
 
     <p>
-        Dr. Ma'en Jitawi
+        <strong>Dr. Ma'en Jitawi</strong>
     </p>
+
+    <p>
+        Jitawi Center for Consulting & Training
+    </p>
+
+    <p>
+        Amman, Jordan
+    </p>
+
+    <p>
+        Email:
+        <a href="mailto:maen@jitawi.com">
+            maen@jitawi.com
+        </a>
+    </p>
+
+    <p>
+        Website:
+        <a href="https://jitawi.com" target="_blank">
+            jitawi.com
+        </a>
+    </p>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    © 2026 Dr. Ma'en Jitawi | Jitawi Center for Consulting & Training
+
+</footer>
 
 </body>
 </html>
